@@ -2,7 +2,7 @@
 \usepackage[utf8x]{inputenc}
 \usepackage{ucs}
 \usepackage[american]{babel}
-\usepackage{amsmath, amsfonts, mathtools, amsthm, amssymb}
+\usepackage{amsmath, amsfonts, mathtools, amsthm, amssymb, systeme}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 
 % Fonts and Spacing
@@ -24,6 +24,9 @@
 % Colors
 \usepackage[dvipsnames]{xcolor}
 
+% Quiver
+\usepackage{../../LaTeX_Template/quiver}
+
 % Headers
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -31,6 +34,10 @@
 \fancyhead[RE,LO]{}
 \fancyfoot[LE,RO]{\thepage}
 \fancyfoot[C]{\leftmark}
+
+% Math Operators
+\DeclareMathOperator{\Hom}{Hom}
+\DeclareMathOperator{\End}{End}
 
 % Theorems
 \makeatother
@@ -122,5 +129,14 @@
 
 % Additional Packages
 \usepackage{url}
-\usepackage[colorlinks=true, allcolors=magenta, backref=page]{hyperref}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=Mahogany,
+    filecolor=Melon,
+    urlcolor=MidnightBlue,
+    citecolor=Maroon,
+    backref=page
+    pdfpagemode=FitH
+}
 \usepackage{tikz}
